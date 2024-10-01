@@ -474,9 +474,9 @@ import { URLs } from './user-data/urls.js';
   populateSkills(skills, "skills");
 
   populateProjects(webProjects, "web-projects");
-  populateProjects(softwareProjects, "Machine learning");
-  populateProjects(androidProjects, "Reinforcement learning");
-  populateProjects(freelanceProjects, "Freelance");
+  populateProjects(softwareProjects, "software-projects");
+  populateProjects(androidProjects, "android-projects");
+  populateProjects(freelanceProjects, "freelance-projects");
   
   populateExp_Edu(experience, "experience");
   populateExp_Edu(education, "education");
