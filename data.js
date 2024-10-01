@@ -1,7 +1,7 @@
 export const bio = [
   "Hello! I'm Ioannis D. Leonidas, a passionate Quantum Software Engineer focused on solving complex problems using cutting-edge quantum algorithms.",
   "I am enthusiastic about continuous learning and improvement, especially in challenging and nearly impossible tasks.",
-  "Thanks for visiting!",
+  "Thanks for visiting!!",
 ];
 
 export const skills = [
