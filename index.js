@@ -472,14 +472,11 @@ import { URLs } from './user-data/urls.js';
   populateBio(bio, "bio");
   
   populateSkills(skills, "skills");
-  
-  fetchBlogsFromMedium(medium);
-  fetchGitConnectedData(gitConnected);
-  
-  populateProjects(webProjects, "web-projects");
-  populateProjects(softwareProjects, "software-projects");
-  populateProjects(androidProjects, "android-projects");
-  populateProjects(freelanceProjects, "freelance-projects");
+
+  populateProjects(webProjects, "Quantum optimization");
+  populateProjects(softwareProjects, "Machine learning");
+  populateProjects(androidProjects, "Reinforcement learning");
+  populateProjects(freelanceProjects, "Freelance");
   
   populateExp_Edu(experience, "experience");
   populateExp_Edu(education, "education");
