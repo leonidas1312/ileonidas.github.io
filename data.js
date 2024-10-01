@@ -32,7 +32,7 @@ export const skills = [
 ];
 
 export const projects = {
-  webProjects: [
+  Optimization: [
     {
       projectName: "AngelQ - Quantum Software",
       image: "images/angelq.png",
