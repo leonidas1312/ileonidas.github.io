@@ -13,19 +13,19 @@ export const skills = [
   },
   {
     title: "Quantum Computing",
-    skillName: "Quantum approximate optimization algorithms, Qubit efficient quantum algorithms, Quantum reinforcement learning",
+    skillName: "Quantum approximate optimization, Qubit efficient quantum algorithms",
     color: "6",
     percentage: "90",
   },
   {
     title: "Software Engineering",
-    skillName: "Data applications, Streamlit, Software design",
+    skillName: "Data applications, Streamlit, System design",
     color: "4",
     percentage: "95",
   },
   {
     title: "Research",
-    skillName: "Optimization problems, Mathematical optimization, Quantum optimization solvers",
+    skillName: "Mathematical optimization, Quantum optimization solvers",
     color: "3",
     percentage: "90",
   },
