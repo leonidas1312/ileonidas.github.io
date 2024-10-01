@@ -6,28 +6,28 @@ export const bio = [
 
 export const skills = [
   {
-    title: "Languages",
-    skillName: "C, Python, SQL, Java, Matlab, Bash script",
+    title: "Programming Languages",
+    skillName: "Python, C, SQL, Java, Matlab ",
     color: "1",
-    percentage: "90",
+    percentage: "100",
   },
   {
     title: "Quantum Computing",
-    skillName: "QAOA, Quantum Machine Learning, Qiskit",
+    skillName: "Quantum approximate optimization algorithms, Qubit efficient quantum algorithms, Quantum reinforcement learning",
     color: "6",
-    percentage: "85",
+    percentage: "90",
   },
   {
     title: "Software Engineering",
-    skillName: "Quantum Algorithms, Variational Quantum Algorithms, NISQ",
+    skillName: "Data applications, Streamlit, Software design",
     color: "4",
-    percentage: "80",
+    percentage: "95",
   },
   {
     title: "Research",
-    skillName: "Quantum Approximate Optimization Algorithms (QAOA), Tail Assignment Problem",
+    skillName: "Optimization problems, Mathematical optimization, Quantum optimization solvers",
     color: "3",
-    percentage: "75",
+    percentage: "90",
   },
 ];
 
