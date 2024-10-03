@@ -205,20 +205,15 @@ export const footer = [
     //     link: "https://twitter.com/thesigmakid",
     //   },
       {
-        text: "Buy me a coffee",
-        link: "https://www.buymeacoffee.com/r194dME8y",
-      },
-      {
-        text: "Github/vinaysomawat.github.io",
-        link: "https://github.com/vinaysomawat/vinaysomawat.github.io",
+        text: " ",
+        link: "images/programmingdiaries.png",
       },
     ],
   },
   {
     label: "copyright-text",
     data: [
-      "Made with &hearts; by Vinay Somawat.",
-      "&copy; No Copyrights. Feel free to use this template.",
+      "Made with &hearts; by Ioannis D. Leonidas.",
     ],
   },
 ];
