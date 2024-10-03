@@ -1,7 +1,7 @@
 export const bio = [
   "Passionate about continuous improvement and intrigued by nearly impossible tasks. In my free time I like to",
   "play football and chess. If I was to be asked, what characteristics describe my professional approach, the following would be the most accurate:",
-"• Problem solver",
+"• Problem solver" ,
 "• Team player, Communicator",
 "• Resilient, Coherent",
 ];
