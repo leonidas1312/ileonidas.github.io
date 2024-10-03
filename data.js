@@ -194,7 +194,7 @@ export const footer = [
 //     ],
 //   },
   {
-    label: "Links",
+    label: "Chess quote",
     data: [
       {
          text: "A good player is always lucky. - Jose Raul Capablanca",
