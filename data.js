@@ -194,20 +194,9 @@ export const footer = [
 //     ],
 //   },
   {
-    label: "Links",
+    label: "A",
     data: [
-    //   {
-    //     text: "Linkedin",
-    //     link: "https://www.linkedin.com/in/vinaysomawat/",
-    //   },
-    //   {
-    //     text: "Twitter",
-    //     link: "https://twitter.com/thesigmakid",
-    //   },
-      {
-        text: "A good player is always lucky. - Jose Raul Capablanca",
-        link: "",
-      },
+      "A good player is always lucky. - Jose Raul Capablanca",
     ],
   },
   {
