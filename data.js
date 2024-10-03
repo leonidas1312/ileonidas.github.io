@@ -194,7 +194,7 @@ export const footer = [
 //     ],
 //   },
   {
-    label: "A good player is always lucky.",
+    label: "Links",
     data: [
     //   {
     //     text: "Linkedin",
@@ -205,7 +205,7 @@ export const footer = [
     //     link: "https://twitter.com/thesigmakid",
     //   },
       {
-        text: "Jose Raul Capablanca",
+        text: "A good player is always lucky. - Jose Raul Capablanca",
         link: "",
       },
     ],
