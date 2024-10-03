@@ -198,7 +198,7 @@ export const footer = [
     data: [
       {
          text: "A good player is always lucky. - Jose Raul Capablanca",
-         link: " ",
+         link: "https://en.wikipedia.org/wiki/Jos%C3%A9_Ra%C3%BAl_Capablanca",
        },
     ],
   },
