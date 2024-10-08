@@ -9,7 +9,7 @@ import {
 
 import { URLs } from './user-data/urls.js';
   
-  const { webProjects, softwareProjects, freelanceProjects } =
+  const { webProjects, softwareProjects, VRPTWpaper, freelanceProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
@@ -478,7 +478,7 @@ import { URLs } from './user-data/urls.js';
   
   populateProjects(webProjects, "web-projects");
   populateProjects(softwareProjects, "software-projects");
-  //populateProjects(researchVRPTW, "research-VRPTW");
+  populateLinks(VRPTWpaper, "research-VRPTW");
   populateProjects(freelanceProjects, "freelance-projects");
   
   populateExp_Edu(experience, "experience");
