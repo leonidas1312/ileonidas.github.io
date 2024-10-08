@@ -478,7 +478,7 @@ import { URLs } from './user-data/urls.js';
   
   populateProjects(webProjects, "web-projects");
   populateProjects(softwareProjects, "software-projects");
-  populateProjects(researchVRPTW, "research-VRPTW");
+  //populateProjects(researchVRPTW, "research-VRPTW");
   populateProjects(freelanceProjects, "freelance-projects");
   
   populateExp_Edu(experience, "experience");
