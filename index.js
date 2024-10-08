@@ -2,6 +2,7 @@ import {
     bio,
     skills,
     projects,
+    researchAndAwards,
     education,
     experience,
     footer,
@@ -9,7 +10,7 @@ import {
 
 import { URLs } from './user-data/urls.js';
   
-  const { webProjects, softwareProjects, freelanceProjects, researchProjectVRPTW } =
+  const { webProjects, softwareProjects, freelanceProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
@@ -284,6 +285,75 @@ import { URLs } from './user-data/urls.js';
       }
     }
   }
+
+function populateResearchAndAwards(items, id) {
+  const sectionElement = document.getElementById(id);
+  const count = 3;
+
+  for (let i = 0; i < count; i++) {
+    const h4 = document.createElement("h4");
+    h4.className = "research-heading";
+    h4.innerHTML = items[i].title;
+
+    const a = document.createElement("a");
+    a.href = items[i].link;
+    a.target = "_blank";
+    a.append(h4);
+
+    const pubDateEle = document.createElement('p');
+    pubDateEle.className = 'date-info';
+    pubDateEle.innerHTML = getFormattedDate(items[i].date);
+    a.append(pubDateEle);
+
+    const divResumeContentRight = document.createElement("div");
+    divResumeContentRight.className = "resume-content";
+    divResumeContentRight.id = "right-div";
+
+    const p = document.createElement("p");
+    p.className = "research-description";
+    const html = items[i].description;
+    const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
+    p.innerHTML = doc;
+
+    const divSpan = document.createElement("div");
+    for (const category of items[i].tags) {
+      const span = document.createElement("span");
+      span.className = "badge badge-secondary";
+      span.innerHTML = category;
+      divSpan.append(span);
+    }
+
+    const divSubHeading = document.createElement("div");
+    divSubHeading.className = "sub-heading";
+    divSubHeading.append(p, divSpan);
+    divResumeContentRight.append(divSubHeading);
+
+    const divResumeItem = document.createElement("div");
+    divResumeItem.className = "resume-item";
+    divResumeItem.append(divResumeContentRight);
+    a.append(divResumeItem);
+
+    const divCard = document.createElement("div");
+    divCard.className = "research-card";
+    divCard.append(a);
+
+    const li = document.createElement("li");
+    li.append(divCard);
+    sectionElement.append(li);
+
+    if (i !== count - 1) {
+      sectionElement.append(document.createElement("hr"));
+    }
+  }
+}
+
+function getFormattedDate(dateStr) {
+  const date = new Date(dateStr);
+  return date.toLocaleDateString();
+}
+
+
+
   
   /**
    * Populate the HTML timeline with items.
@@ -478,9 +548,11 @@ import { URLs } from './user-data/urls.js';
   
   populateProjects(webProjects, "web-projects");
   populateProjects(softwareProjects, "software-projects");
-  populateProjects(researchProjectVRPTW, "research-project-vrptw");
+  //populateProjects(researchProjectVRPTW, "research-project-vrptw");
   populateProjects(freelanceProjects, "freelance-projects");
-  
+
+  populateResearchAndAwards(researchAndAwards, 'research-awards-section');
+
   populateExp_Edu(experience, "experience");
   populateExp_Edu(education, "education");
   
