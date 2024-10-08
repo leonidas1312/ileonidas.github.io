@@ -473,8 +473,8 @@ import { URLs } from './user-data/urls.js';
   
   populateSkills(skills, "skills");
   
-  fetchBlogsFromMedium(medium);
-  fetchGitConnectedData(gitConnected);
+  //fetchBlogsFromMedium(medium);
+  //fetchGitConnectedData(gitConnected);
   
   populateProjects(webProjects, "web-projects");
   populateProjects(softwareProjects, "software-projects");
