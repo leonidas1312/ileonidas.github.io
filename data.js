@@ -62,20 +62,6 @@ export const projects = {
       techStack: ["Streamlit", "PyTorch", "yFinance"],
     },
   ],
-  researchVRPTW: [
-    {
-      projectName: "VRPTW research",
-      image: "images/snylloair.png",
-      summary:
-        "In this work, we explored a qubit encoding scheme to reduce the number of qubits required for solving the VRPTW, "
-         "a critical problem in logistics. By applying a quantum variational approach to instances ranging from 11 to 3964 routes, "
-         "formulated as QUBO problems, we benchmarked the results across quantum simulators and hardware platforms (IBM, AWS, IonQ), "
-         "comparing them to the classical solver Gurobi. The study demonstrates that despite fewer qubits, the encoding scheme can achieve solutions "
-         "comparable to full qubit encodings, highlighting the potential of NISQ devices for industry-based optimization.",
-      preview: "https://onlinelibrary.wiley.com/doi/abs/10.1002/qute.202300309",
-      techStack: ["Variational quantum algorithms", "Qubit efficient", "Collaboration"],
-    },
-  ],
 };
 
 export const experience = [
