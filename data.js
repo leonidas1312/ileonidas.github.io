@@ -62,16 +62,6 @@ export const projects = {
       techStack: ["Streamlit", "PyTorch", "yFinance"],
     },
   ],
-  researchProjectVRPTW: [
-    {
-      projectName: "VRPTW paper",
-      image: "images/snylloair.png",
-      summary:
-        "VRPTW paper.",
-      preview: "https://onlinelibrary.wiley.com/doi/abs/10.1002/qute.202300309",
-      techStack: ["Vehicle routing", "Variational quantum", "QUBO"],
-    },
-  ],
 };
 
 export const researchAndAwards = [
