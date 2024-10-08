@@ -9,7 +9,7 @@ import {
 
 import { URLs } from './user-data/urls.js';
   
-  const { webProjects, softwareProjects, freelanceProjects, researchVRPTW } =
+  const { webProjects, softwareProjects, freelanceProjects } =
     projects;
   const { medium, gitConnected } = URLs;
   
