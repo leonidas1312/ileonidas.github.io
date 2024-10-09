@@ -359,7 +359,7 @@ function populateResearch(items, id) {
             span.innerHTML = tech;
             divSpan.append(span);
         });
-
+        console.log("Appended item:", li.cloneNode(true));
         // Append cloned elements
         researchSection.append(li.cloneNode(true));
 
