@@ -66,25 +66,25 @@ export const projects = {
 
 export const researchAndAwards = [
     {
-      title: "Quantum Computing for VRPTW Optimization",
-      link: "https://example.com/quantum-paper",
-      date: "2023-12-01",
-      description: "<p>Published in Quantum Science Journal, this paper explores...</p>",
-      tags: ["Quantum Computing", "VRPTW", "Optimization"]
+        researchTitle: "Quantum Optimization in Logistics",
+        link: "https://example.com/quantum-paper",
+        image: "",
+        summary: "A detailed study on quantum approaches to vehicle routing problems with time windows.",
+        techStack: ["Quantum Computing", "Logistics", "Optimization"]
     },
     {
-        title: "Best Paper Award at QConf 2023",
+        researchTitle: "Best Paper Award at QConf 2023",
         link: "https://example.com/award-details",
-        date: "2023-11-20",
-        description: "<p>Received the Best Paper Award for outstanding research on...</p>",
-        tags: ["Award", "Conference"]
+        image: "",
+        summary: "<p>Received the Best Paper Award for outstanding research on...</p>",
+        techStack: ["Award", "Conference"]
       },
       {
-        title: "Vehicle Routing Problem: A Quantum Approach",
+        researchTitle: "Vehicle Routing Problem: A Quantum Approach",
         link: "https://example.com/vrptw-paper",
-        date: "2024-01-15",
-        description: "<p>A novel approach to solving VRPTW using quantum techniques...</p>",
-        tags: ["Research", "VRPTW", "Quantum Algorithms"]
+        image: "",
+        summary: "<p>A novel approach to solving VRPTW using quantum techniques...</p>",
+        techStack: ["Research", "VRPTW", "Quantum Algorithms"]
       },
   ];
 
