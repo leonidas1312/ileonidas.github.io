@@ -66,20 +66,28 @@ export const projects = {
 
 export const researchAndAwards = [
     {
-        title: "Quantum Optimization for VRP",
-        description: "Exploring the Vehicle Routing Problem using quantum algorithms for enhanced optimization.",
-        image: "https://example.com/image1.jpg",
+        title: "Qubit efficient quantum optimization for VRPTW",
+        description: "Exploring the Vehicle Routing Problem with Time Windows using quantum algorithms for enhanced optimization. Published at Advanced Quantum Technologies journal.",
+        image: "images/vrptw.png",
         link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/qute.202300309",
-        keywords: ["Quantum Computing", "Optimization", "VRP"],
-        date: "September 2023"
+        keywords: ["Quantum computing", "Optimization", "VRP"],
+        date: "April 2024"
     },
     {
-        title: "Advances in Quantum Machine Learning",
-        description: "A comprehensive review of the latest methods in quantum machine learning.",
-        image: "https://example.com/image2.jpg",
-        link: "https://example.com/research-paper-2",
-        keywords: ["Quantum ML", "Machine Learning", "Research"],
-        date: "July 2023"
+        title: "Academic fellowship from the Technical University of Crete",
+        description: "Recognized for contributions as a teaching/lab assistant in Physics/Quantum technologies class. ",
+        image: "images/tuc_sign.png",
+        link: "",
+        keywords: ["Teaching assistant", "Quantum technology", "Physics education"],
+        date: "July 2022"
+    },
+    {
+        title: "Representative of Greece at the Quantum Future Academy",
+        description: "Enjoyed a lot of talks from quantum experts, learned why quantum technology is important from some top tier worldwide companies.",
+        image: "images/quantum_future_academy.jpg",
+        link: "https://www.icfo.eu/news/1748/quantum-future-academy-berlin-1-7-november-2020-/",
+        keywords: ["Quantum technology", "Innovation", "Research and developement"],
+        date: "November 2020"
     }
 ];
 
