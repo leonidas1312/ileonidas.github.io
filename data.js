@@ -76,14 +76,14 @@ export const researchAndAwards = [
         researchTitle: "Best Paper Award at QConf 2023",
         link: "https://example.com/award-details",
         image: "",
-        summary: "<p>Received the Best Paper Award for outstanding research on...</p>",
+        summary: "Received the Best Paper Award for outstanding research on...",
         techStack: ["Award", "Conference"]
       },
       {
         researchTitle: "Vehicle Routing Problem: A Quantum Approach",
         link: "https://example.com/vrptw-paper",
         image: "",
-        summary: "<p>A novel approach to solving VRPTW using quantum techniques...</p>",
+        summary: "A novel approach to solving VRPTW using quantum techniques...",
         techStack: ["Research", "VRPTW", "Quantum Algorithms"]
       },
   ];
