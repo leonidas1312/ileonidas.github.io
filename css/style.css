@@ -20,6 +20,7 @@
   }
 
 /* Research Section */
+/* Research Section */
 .research-menu {
     display: block; /* Ensure it's visible */
     background: #f9bf3f;
@@ -69,10 +70,20 @@
     color: #000; /* Description always black */
 }
 
+.research-keywords span {
+    background-color: #f0f0f0;
+    color: #000; /* Keywords always black */
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
 .research-date {
     font-size: 12px;
     color: #999;
 }
+
 
 
 
