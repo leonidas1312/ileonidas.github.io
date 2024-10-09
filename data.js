@@ -71,7 +71,21 @@ export const researchAndAwards = [
       date: "2023-12-01",
       description: "<p>Published in Quantum Science Journal, this paper explores...</p>",
       tags: ["Quantum Computing", "VRPTW", "Optimization"]
-    }
+    },
+    {
+        title: "Best Paper Award at QConf 2023",
+        link: "https://example.com/award-details",
+        date: "2023-11-20",
+        description: "<p>Received the Best Paper Award for outstanding research on...</p>",
+        tags: ["Award", "Conference"]
+      },
+      {
+        title: "Vehicle Routing Problem: A Quantum Approach",
+        link: "https://example.com/vrptw-paper",
+        date: "2024-01-15",
+        description: "<p>A novel approach to solving VRPTW using quantum techniques...</p>",
+        tags: ["Research", "VRPTW", "Quantum Algorithms"]
+      },
   ];
 
 
