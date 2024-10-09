@@ -288,13 +288,6 @@ import { URLs } from './user-data/urls.js';
 
 function populateResearch(items, id) {
     let researchSection = document.getElementById(id);
-    if (!researchSection) {
-        console.error("No element found with id:", id);
-        return;
-    }
-
-    // Debugging check
-    console.log("Populating research for", id, "with items:", items);
 
     let h4 = document.createElement("h4");
     h4.className = "research-heading";
