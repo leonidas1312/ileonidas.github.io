@@ -286,70 +286,77 @@ import { URLs } from './user-data/urls.js';
     }
   }
 
-function populateResearchAndAwards(items, id) {
-  const sectionElement = document.getElementById(id);
-  const count = 3;
-
-  for (let i = 0; i < count; i++) {
-    const h4 = document.createElement("h4");
+function populateResearch(items, id) {
+    let researchSection = document.getElementById(id);
+  
+    let h4 = document.createElement("h4");
     h4.className = "research-heading";
-    h4.innerHTML = items[i].title;
-
-    const a = document.createElement("a");
-    a.href = items[i].link;
+  
+    let a = document.createElement("a");
     a.target = "_blank";
-    a.append(h4);
-
-    const pubDateEle = document.createElement('p');
-    pubDateEle.className = 'date-info';
-    pubDateEle.innerHTML = getFormattedDate(items[i].date);
-    a.append(pubDateEle);
-
-    const divResumeContentRight = document.createElement("div");
+  
+    let img = document.createElement("img");
+    img.className = "img-fluid";
+  
+    let divResumeContentLeft = document.createElement("div");
+    divResumeContentLeft.className = "resume-content";
+    divResumeContentLeft.id = "left-div";
+    divResumeContentLeft.append(img);
+  
+    let divResumeContentRight = document.createElement("div");
     divResumeContentRight.className = "resume-content";
     divResumeContentRight.id = "right-div";
-
-    const p = document.createElement("p");
+  
+    let p = document.createElement("p");
     p.className = "research-description";
-    const html = items[i].description;
-    const [, doc] = /<p>(.*?)<\/p>/g.exec(html) || [];
-    p.innerHTML = doc;
-
-    const divSpan = document.createElement("div");
-    for (const category of items[i].tags) {
-      const span = document.createElement("span");
-      span.className = "badge badge-secondary";
-      span.innerHTML = category;
-      divSpan.append(span);
-    }
-
-    const divSubHeading = document.createElement("div");
+  
+    let divSpan = document.createElement("div");
+  
+    let divSubHeading = document.createElement("div");
     divSubHeading.className = "sub-heading";
-    divSubHeading.append(p, divSpan);
+    divSubHeading.append(p);
+    divSubHeading.append(divSpan);
     divResumeContentRight.append(divSubHeading);
-
-    const divResumeItem = document.createElement("div");
+  
+    let divResumeItem = document.createElement("div");
     divResumeItem.className = "resume-item";
+    divResumeItem.append(divResumeContentLeft);
     divResumeItem.append(divResumeContentRight);
     a.append(divResumeItem);
-
-    const divCard = document.createElement("div");
-    divCard.className = "research-card";
-    divCard.append(a);
-
-    const li = document.createElement("li");
-    li.append(divCard);
-    sectionElement.append(li);
-
-    if (i !== count - 1) {
-      sectionElement.append(document.createElement("hr"));
+  
+    let divResearchCard = document.createElement("div");
+    divResearchCard.className = "research-card";
+    divResearchCard.append(a);
+  
+    let li = document.createElement("li");
+    li.append(divResearchCard);
+  
+    let hr = document.createElement("hr");
+  
+    for (let i = 0; i < items.length; i++) {
+      h4.innerHTML = items[i].researchTitle;
+      a.href = items[i].link;
+  
+      img.src = items[i].image || ""; // Optional image for the research paper
+  
+      p.innerHTML = items[i].summary;
+  
+      divSpan.innerHTML = "";
+      if (items[i].techStack) {
+        for (let k = 0; k < items[i].techStack.length; k++) {
+          let span = document.createElement("span");
+          span.className = "badge badge-secondary";
+          span.innerHTML = items[i].techStack[k];
+          divSpan.append(span);
+        }
+      }
+  
+      researchSection.append(li.cloneNode(true));
+  
+      if (i != items.length - 1) {
+        researchSection.append(hr.cloneNode(true));
+      }
     }
-  }
-}
-
-function getFormattedDate(dateStr) {
-  const date = new Date(dateStr);
-  return date.toLocaleDateString();
 }
 
 
