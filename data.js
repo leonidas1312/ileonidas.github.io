@@ -66,27 +66,23 @@ export const projects = {
 
 export const researchAndAwards = [
     {
-        researchTitle: "Quantum Optimization in Logistics",
-        link: "https://example.com/quantum-paper",
-        image: "",
-        summary: "A detailed study on quantum approaches to vehicle routing problems with time windows.",
-        techStack: ["Quantum Computing", "Logistics", "Optimization"]
+        title: "Quantum Optimization for VRP",
+        description: "Exploring the Vehicle Routing Problem using quantum algorithms for enhanced optimization.",
+        image: "https://example.com/image1.jpg",
+        link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/qute.202300309",
+        keywords: ["Quantum Computing", "Optimization", "VRP"],
+        date: "September 2023"
     },
     {
-        researchTitle: "Best Paper Award at QConf 2023",
-        link: "https://example.com/award-details",
-        image: "",
-        summary: "Received the Best Paper Award for outstanding research on...",
-        techStack: ["Award", "Conference"]
-      },
-      {
-        researchTitle: "Vehicle Routing Problem: A Quantum Approach",
-        link: "https://example.com/vrptw-paper",
-        image: "",
-        summary: "A novel approach to solving VRPTW using quantum techniques...",
-        techStack: ["Research", "VRPTW", "Quantum Algorithms"]
-      },
-  ];
+        title: "Advances in Quantum Machine Learning",
+        description: "A comprehensive review of the latest methods in quantum machine learning.",
+        image: "https://example.com/image2.jpg",
+        link: "https://example.com/research-paper-2",
+        keywords: ["Quantum ML", "Machine Learning", "Research"],
+        date: "July 2023"
+    }
+];
+
 
 
 
