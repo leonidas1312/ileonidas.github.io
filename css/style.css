@@ -19,6 +19,47 @@
 	color: white;
   }
 
+
+/*
+Research & Awards 
+*/
+/* Research Section */
+.research-menu {
+    display: block; /* Ensure it's visible */
+    background: #f0f0f0; /* Lighter background for research section */
+    font-size: 16px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.research-menu li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #ffffff; /* Background for individual research items */
+    border: 1px solid #e0e0e0; /* Subtle border for separation */
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px;
+}
+
+.research-menu li:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+    background: #f9f9f9; /* Slight hover effect */
+}
+
+.research-menu a {
+    display: block;
+    text-decoration: none;
+    color: #333333; /* Darker color for readability */
+    padding: 12px;
+    padding-left: 10px;
+    transition: all 0.25s ease;
+}
+
+
+
+
 /* =======================================================
 *
 * 	Template Style 
