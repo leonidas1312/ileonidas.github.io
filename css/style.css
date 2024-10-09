@@ -19,45 +19,59 @@
 	color: white;
   }
 
-
-/*
-Research & Awards 
-*/
 /* Research Section */
 .research-menu {
-	    display: block; /* Ensure it's visible */
-	    background: #f9bf3f; 
-	    font-size: 14px;
-	    padding-left: 0px;
-	    padding-top: 10px;
-	    padding-bottom: 10px;
+    display: block; /* Ensure it's visible */
+    background: #f9bf3f;
+    font-size: 14px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .research-menu li {
-	    margin-top: 10px;
-	    margin-bottom: 10px;
-	    padding: 10px;
-	    background: #ffffff; /* Background for individual research items */
-	    border: 1px solid #e0e0e0; /* Subtle border for separation */
-	    border-radius: 5px;
-	    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f9bf3f; /* Background for individual research items */
+    border: 1px solid #e0e0e0; /* Subtle border for separation */
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px;
 }
 
 .research-menu li:hover {
-	    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-	    border-radius: 5px;
-	    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 5px;
 }
 
 .research-menu a {
-    	display: block;
-	text-decoration: none;
-	color: #d9d9d9;
-	padding: 12px;
-	padding-left: 10px;
-	-webkit-transition: all 0.25s ease;
-	-o-transition: all 0.25s ease;
-	transition: all 0.25s ease;
+    display: block;
+    text-decoration: none;
+    color: #000; /* Always black */
+    padding: 12px;
+    padding-left: 10px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+/* Ensure the text color stays black on hover */
+.research-menu a:hover {
+    color: #000 !important; /* Force black text color */
+}
+
+.research-title {
+    color: #000; /* Title always black */
+    font-weight: bold;
+}
+
+.research-description {
+    color: #000; /* Description always black */
+}
+
+.research-date {
+    font-size: 12px;
+    color: #999;
 }
 
 
