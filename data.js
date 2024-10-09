@@ -68,7 +68,7 @@ export const researchAndAwards = [
     {
         title: "Qubit efficient quantum optimization for VRPTW",
         description: "Exploring the Vehicle Routing Problem with Time Windows using quantum algorithms for enhanced optimization. Published at Advanced Quantum Technologies journal.",
-        image: "images/vrptw.png",
+        image: "images/vrptw.PNG",
         link: "https://onlinelibrary.wiley.com/doi/abs/10.1002/qute.202300309",
         keywords: ["Quantum computing", "Optimization", "VRP"],
         date: "April 2024"
