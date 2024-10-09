@@ -288,7 +288,14 @@ import { URLs } from './user-data/urls.js';
 
 function populateResearch(items, id) {
     let researchSection = document.getElementById(id);
-  
+    if (!researchSection) {
+        console.error("No element found with id:", id);
+        return;
+    }
+
+    // Debugging check
+    console.log("Populating research for", id, "with items:", items);
+
     let h4 = document.createElement("h4");
     h4.className = "research-heading";
   
@@ -332,32 +339,43 @@ function populateResearch(items, id) {
     li.append(divResearchCard);
   
     let hr = document.createElement("hr");
-  
+
+    // Loop over items and append content
     for (let i = 0; i < items.length; i++) {
-      h4.innerHTML = items[i].researchTitle;
-      a.href = items[i].link;
-  
-      img.src = items[i].image || ""; // Optional image for the research paper
-  
-      p.innerHTML = items[i].summary;
-  
-      divSpan.innerHTML = "";
-      if (items[i].techStack) {
-        for (let k = 0; k < items[i].techStack.length; k++) {
-          let span = document.createElement("span");
-          span.className = "badge badge-secondary";
-          span.innerHTML = items[i].techStack[k];
-          divSpan.append(span);
+        let item = items[i];
+        console.log("Processing item:", item);
+
+        // Safeguard against undefined fields
+        let researchTitle = item.researchTitle || "Untitled Research";
+        let link = item.link || "#"; // Default to '#' if no link provided
+        let imageSrc = item.image || ""; // Default to empty string if no image
+        let summary = item.summary || "No description available.";
+        let techStack = item.techStack || [];
+
+        // Populate content
+        h4.innerHTML = researchTitle;
+        a.href = link;
+        img.src = imageSrc;
+        p.innerHTML = summary;
+
+        // Clear and add badges for tech stack
+        divSpan.innerHTML = "";
+        techStack.forEach(tech => {
+            let span = document.createElement("span");
+            span.className = "badge badge-secondary";
+            span.innerHTML = tech;
+            divSpan.append(span);
+        });
+
+        // Append cloned elements
+        researchSection.append(li.cloneNode(true));
+
+        if (i !== items.length - 1) {
+            researchSection.append(hr.cloneNode(true));
         }
-      }
-  
-      researchSection.append(li.cloneNode(true));
-  
-      if (i != items.length - 1) {
-        researchSection.append(hr.cloneNode(true));
-      }
     }
 }
+
 
 
 
