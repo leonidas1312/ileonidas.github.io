@@ -303,6 +303,9 @@ function populateResearch(items, id) {
 
         // Create the image element
         let img = document.createElement("img");
+        img.style.width = "50px"; // Set the width
+        img.style.height = "auto"; // Ensure aspect ratio is maintained
+
         img.src = items[i].image; // Set the image source
         img.alt = items[i].title; // Set alternative text for the image
         img.className = "img-fluid"; // Ensure responsiveness
