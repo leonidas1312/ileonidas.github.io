@@ -35,7 +35,7 @@ export const projects = {
   webProjects: [
     {
       projectName: "Variational quantum classical QUBO solver ",
-      image: "images/programmingdiaries.png",
+      image: "images/vrptw.PNG",
       summary:
         "Developed a full stack web application where the user can create multiple optimization problems (Tail assignment, Vehicle routing, etc..) and solve them using a qubit efficient variational quantum algorithm.",
       preview: "https://github.com/leonidas1312",
