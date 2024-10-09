@@ -289,83 +289,60 @@ import { URLs } from './user-data/urls.js';
 function populateResearch(items, id) {
     let researchSection = document.getElementById(id);
 
-    let h4 = document.createElement("h4");
-    h4.className = "research-heading";
-  
-    let a = document.createElement("a");
-    a.target = "_blank";
-  
-    let img = document.createElement("img");
-    img.className = "img-fluid";
-  
-    let divResumeContentLeft = document.createElement("div");
-    divResumeContentLeft.className = "resume-content";
-    divResumeContentLeft.id = "left-div";
-    divResumeContentLeft.append(img);
-  
-    let divResumeContentRight = document.createElement("div");
-    divResumeContentRight.className = "resume-content";
-    divResumeContentRight.id = "right-div";
-  
-    let p = document.createElement("p");
-    p.className = "research-description";
-  
-    let divSpan = document.createElement("div");
-  
-    let divSubHeading = document.createElement("div");
-    divSubHeading.className = "sub-heading";
-    divSubHeading.append(p);
-    divSubHeading.append(divSpan);
-    divResumeContentRight.append(divSubHeading);
-  
-    let divResumeItem = document.createElement("div");
-    divResumeItem.className = "resume-item";
-    divResumeItem.append(divResumeContentLeft);
-    divResumeItem.append(divResumeContentRight);
-    a.append(divResumeItem);
-  
-    let divResearchCard = document.createElement("div");
-    divResearchCard.className = "research-card";
-    divResearchCard.append(a);
-  
-    let li = document.createElement("li");
-    li.append(divResearchCard);
-  
-    let hr = document.createElement("hr");
-
-    // Loop over items and append content
     for (let i = 0; i < items.length; i++) {
-        let item = items[i];
-        console.log("Processing item:", item);
+        // Create the main list item
+        let li = document.createElement("li");
 
-        // Safeguard against undefined fields
-        let researchTitle = item.researchTitle || "Untitled Research";
-        let link = item.link || "#"; // Default to '#' if no link provided
-        let imageSrc = item.image || ""; // Default to empty string if no image
-        let summary = item.summary || "No description available.";
-        let techStack = item.techStack || [];
+        // Create the link element
+        let a = document.createElement("a");
+        a.href = items[i].link; // Dynamically set the research link
+        a.target = "_blank"; // Opens in a new tab
 
-        // Populate content
-        h4.innerHTML = researchTitle;
-        a.href = link;
-        img.src = imageSrc;
-        p.innerHTML = summary;
+        // Create the image element
+        let img = document.createElement("img");
+        img.src = items[i].image; // Dynamically set the image source
+        img.alt = items[i].title; // Alternative text for the image
+        img.className = "img-fluid"; // Ensure image responsiveness
 
-        // Clear and add badges for tech stack
-        divSpan.innerHTML = "";
-        techStack.forEach(tech => {
-            let span = document.createElement("span");
-            span.className = "badge badge-secondary";
-            span.innerHTML = tech;
-            divSpan.append(span);
+        // Create the title element
+        let title = document.createElement("h4");
+        title.className = "research-title";
+        title.textContent = items[i].title; // Dynamically set the research title
+
+        // Create the description paragraph
+        let description = document.createElement("p");
+        description.className = "research-description";
+        description.textContent = items[i].description; // Dynamically set the description
+
+        // Create the date element
+        let date = document.createElement("p");
+        date.className = "research-date";
+        date.textContent = `Published on: ${items[i].date}`; // Dynamically set the date
+
+        // Create the keywords container
+        let keywordsContainer = document.createElement("div");
+        keywordsContainer.className = "research-keywords";
+
+        // Add each keyword
+        items[i].keywords.forEach(function (keyword) {
+            let keywordSpan = document.createElement("span");
+            keywordSpan.className = "badge badge-secondary";
+            keywordSpan.textContent = keyword; // Dynamically add keywords
+            keywordsContainer.appendChild(keywordSpan);
         });
-        console.log("Appended item:", li.cloneNode(true));
-        // Append cloned elements
-        researchSection.append(li.cloneNode(true));
 
-        if (i !== items.length - 1) {
-            researchSection.append(hr.cloneNode(true));
-        }
+        // Append elements to the anchor (link) element
+        a.appendChild(img); // Image
+        a.appendChild(title); // Title
+        a.appendChild(description); // Description
+        a.appendChild(date); // Date
+        a.appendChild(keywordsContainer); // Keywords
+
+        // Append the link to the list item
+        li.appendChild(a);
+
+        // Append the list item to the research section
+        researchSection.appendChild(li);
     }
 }
 
