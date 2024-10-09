@@ -2086,7 +2086,7 @@ ul {
 .submenu a {
 	display: block;
 	text-decoration: none;
-	color: #d9d9d9;
+	color: #000000;
 	padding: 12px;
 	padding-left: 10px;
 	-webkit-transition: all 0.25s ease;
