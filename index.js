@@ -323,7 +323,7 @@ function populateResearch(items, id) {
         // Create the date element
         let date = document.createElement("p");
         date.className = "research-date";
-        date.textContent = `Published on: ${items[i].date}`; // Set the date
+        date.textContent = items[i].date; // Set the date
 
         // Create the keywords container
         let keywordsContainer = document.createElement("div");
