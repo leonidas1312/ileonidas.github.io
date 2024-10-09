@@ -289,35 +289,38 @@ import { URLs } from './user-data/urls.js';
 function populateResearch(items, id) {
     let researchSection = document.getElementById(id);
 
+    // Clear existing items to avoid duplication on multiple calls
+    researchSection.innerHTML = '';
+
     for (let i = 0; i < items.length; i++) {
         // Create the main list item
         let li = document.createElement("li");
 
         // Create the link element
         let a = document.createElement("a");
-        a.href = items[i].link; // Dynamically set the research link
-        a.target = "_blank"; // Opens in a new tab
+        a.href = items[i].link; // Set the research link
+        a.target = "_blank"; // Open in a new tab
 
         // Create the image element
         let img = document.createElement("img");
-        img.src = items[i].image; // Dynamically set the image source
-        img.alt = items[i].title; // Alternative text for the image
-        img.className = "img-fluid"; // Ensure image responsiveness
+        img.src = items[i].image; // Set the image source
+        img.alt = items[i].title; // Set alternative text for the image
+        img.className = "img-fluid"; // Ensure responsiveness
 
         // Create the title element
         let title = document.createElement("h4");
         title.className = "research-title";
-        title.textContent = items[i].title; // Dynamically set the research title
+        title.textContent = items[i].title; // Set the title
 
         // Create the description paragraph
         let description = document.createElement("p");
         description.className = "research-description";
-        description.textContent = items[i].description; // Dynamically set the description
+        description.textContent = items[i].description; // Set the description
 
         // Create the date element
         let date = document.createElement("p");
         date.className = "research-date";
-        date.textContent = `Published on: ${items[i].date}`; // Dynamically set the date
+        date.textContent = `Published on: ${items[i].date}`; // Set the date
 
         // Create the keywords container
         let keywordsContainer = document.createElement("div");
@@ -327,11 +330,11 @@ function populateResearch(items, id) {
         items[i].keywords.forEach(function (keyword) {
             let keywordSpan = document.createElement("span");
             keywordSpan.className = "badge badge-secondary";
-            keywordSpan.textContent = keyword; // Dynamically add keywords
+            keywordSpan.textContent = keyword; // Add keyword
             keywordsContainer.appendChild(keywordSpan);
         });
 
-        // Append elements to the anchor (link) element
+        // Append elements to the anchor
         a.appendChild(img); // Image
         a.appendChild(title); // Title
         a.appendChild(description); // Description
@@ -343,6 +346,13 @@ function populateResearch(items, id) {
 
         // Append the list item to the research section
         researchSection.appendChild(li);
+
+        // Append the icon between items (except after the last item)
+        if (i < items.length - 1) {
+            let icon = document.createElement("i");
+            icon.className = "fa fa-chevron-down"; // Set the icon class
+            researchSection.appendChild(icon); // Add the icon
+        }
     }
 }
 
