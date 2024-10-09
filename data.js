@@ -77,7 +77,7 @@ export const researchAndAwards = [
         title: "Academic fellowship from the Technical University of Crete",
         description: "Recognized for contributions as a teaching/lab assistant in Physics/Quantum technologies class. ",
         image: "images/tuc_sign.png",
-        link: "",
+        link: "https://www.tuc.gr/el/archi",
         keywords: ["Teaching assistant", "Quantum technology", "Physics education"],
         date: "July 2022"
     },
