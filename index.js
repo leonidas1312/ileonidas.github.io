@@ -346,15 +346,9 @@ function populateResearch(items, id) {
 
         // Append the list item to the research section
         researchSection.appendChild(li);
-
-        // Append the icon between items (except after the last item)
-        if (i < items.length - 1) {
-            let icon = document.createElement("i");
-            icon.className = "fa fa-chevron-down"; // Set the icon class
-            researchSection.appendChild(icon); // Add the icon
-        }
     }
 }
+
 
 
 
