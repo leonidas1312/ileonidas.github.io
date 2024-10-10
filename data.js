@@ -58,7 +58,7 @@ export const projects = {
       image: "images/gpuRL.PNG",
       summary:
         "Classical RL method designed to run on GPUs with the purpose of enchancing classical bitstring solutions using a problem based reward system.",
-      preview: "https://github.com/leonidas1312",
+      preview: "https://dias.library.tuc.gr/view/99392?locale=en",
       techStack: ["GPU based", "UCB score", "Exploration & Exploitation"],
     },
   ],
