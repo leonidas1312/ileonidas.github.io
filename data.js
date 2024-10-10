@@ -34,10 +34,18 @@ export const skills = [
 export const projects = {
   webProjects: [
     {
-      projectName: "Variational quantum classical QUBO solver ",
-      image: "images/vrptw.PNG",
+      projectName: "Qubit efficient variational quantum classical QUBO solver ",
+      image: "images/streamlit1.jpg",
       summary:
         "Developed a full stack web application where the user can create multiple optimization problems (Tail assignment, Vehicle routing, etc..) and solve them using a qubit efficient variational quantum algorithm.",
+      preview: "https://github.com/leonidas1312",
+      techStack: ["Streamlit", "Qubit efficient", "Variational quantum classical", "Qiskit", "Tensorflow"],
+    },
+    {
+      projectName: "Software for creating optimization problems online",
+      image: "images/planes.jpg",
+      summary:
+        "Developed software for creating and visualizing optimization problems like the Vehicle Routing, Tail Assignment, Flight Gate Assignment online using data from online sources, ",
       preview: "https://github.com/leonidas1312",
       techStack: ["Streamlit", "Qubit efficient", "Variational quantum classical", "Qiskit", "Tensorflow"],
     },
@@ -60,6 +68,14 @@ export const projects = {
         "Classical RL method designed to run on GPUs with the purpose of enchancing classical bitstring solutions using a problem based reward system.",
       preview: "https://dias.library.tuc.gr/view/99392?locale=en",
       techStack: ["GPU based", "UCB score", "Exploration & Exploitation"],
+    },
+    {
+      projectName: "Reinforcement learning based food recommendations based on real data",
+      image: "images/Structure-of-a-recommender-system.png",
+      summary:
+        "Developed an RL recommendation system that recommends food products to users based on their weekly budget and dietary constraints but ensuring variety of products.",
+      preview: "https://github.com/leonidas1312",
+      techStack: ["Recommendation system", "Pandas", "Weekly recommendations", "Multiple products"],
     },
   ],
 };
