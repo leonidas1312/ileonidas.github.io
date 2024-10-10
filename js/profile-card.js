@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", async function () {
         {
             title: "Postgraduate Thesis Publication @ Technical University of Crete website",
             link: "https://www.ece.tuc.gr/en/news/item/publication-of-the-postgraduate-thesis-of-a-graduate-student-of-the-ece-school-in-a-high-level-international-research-journal",
-            description: "A highlight of my thesis published in a top international research journal."
+            description: "A highlight of my thesis and the work done with colleagues."
         }
     ];
 
