@@ -545,8 +545,8 @@ function populateResearch(items, id) {
   
   populateSkills(skills, "skills");
   
-  fetchBlogsFromMedium(medium);
-  fetchGitConnectedData(gitConnected);
+  //fetchBlogsFromMedium(medium);
+  //fetchGitConnectedData(gitConnected);
   
   populateProjects(webProjects, "web-projects");
   populateProjects(softwareProjects, "software-projects");
