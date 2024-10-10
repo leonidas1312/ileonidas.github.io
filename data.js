@@ -44,22 +44,22 @@ export const projects = {
   ],
   softwareProjects: [
     {
-      projectName: "Reinforcement learning based enchancement of QUBO solvers",
-      image: "images/pizzaorderchatbot.png",
-      summary:
-        "Classical RL method designed to run on GPUs with the purpose of enchancing classical bitstring solutions using a problem based reward system.",
-      preview: "https://github.com/leonidas1312",
-      techStack: ["Dailogflow", "Firebase"],
-    },
-  ],
-  freelanceProjects: [
-    {
       projectName: "MoMo trading bot",
-      image: "images/snylloair.png",
+      image: "images/Neural-Networks-Architecture.png",
       summary:
         "Trained a neural network to predict stock prices with data found online.",
       preview: "https://github.com/leonidas1312/MoMo-trading-bot",
       techStack: ["Streamlit", "PyTorch", "yFinance"],
+    },
+  ],
+  freelanceProjects: [
+    {
+      projectName: "Reinforcement learning based enchancement of QUBO solvers",
+      image: "images/gpuRL.PNG",
+      summary:
+        "Classical RL method designed to run on GPUs with the purpose of enchancing classical bitstring solutions using a problem based reward system.",
+      preview: "https://github.com/leonidas1312",
+      techStack: ["GPU based", "UCB score", "Exploration & Exploitation"],
     },
   ],
 };
@@ -99,10 +99,10 @@ export const experience = [
     title: "Angelakis research group / AngelQ startup",
     duration: "October 2020 - February 2024",
     subtitle: "Quantum software engineer",
-    details: ['Developed full stack web application where you create/visualize optimization problems and solve themm using qubit efficient quantum algorithms',
+    details: ['Developed full stack web application where you create/visualize optimization problems and solve them using qubit efficient quantum algorithms',
              ],
     tags: ["QUBO", "Quantum computing", "Research & Developement", "Web application", "Python"],
-    icon: "atom ",
+    icon: "brain ",
   },
   {
     title: "EU Horizon program in Technical University of Crete",
