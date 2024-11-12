@@ -553,10 +553,10 @@ function populateResearch(items, id) {
   //populateProjects(researchProjectVRPTW, "research-project-vrptw");
   populateProjects(freelanceProjects, "freelance-projects");
 
-  populateResearch(researchAndAwards, 'research-awards-section');
+  //populateResearch(researchAndAwards, 'research-awards-section');
 
-  populateExp_Edu(experience, "experience");
-  populateExp_Edu(education, "education");
+  //populateExp_Edu(experience, "experience");
+  //populateExp_Edu(education, "education");
   
   populateLinks(footer, "footer");
   
