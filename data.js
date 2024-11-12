@@ -1,7 +1,8 @@
 export const bio = [
-  "Hello. I'm Ioannis D. Leonidas, a passionate quantum software engineer focused on solving complex problems using cutting-edge quantum algorithms.",
-  "I am enthusiastic about continuous learning and improvement, especially in challenging and nearly impossible tasks.",
-  "Thanks for visiting!",
+  `Always on the lookout for fresh challenges, I’m fueled by projects that stretch the limits of what’s possible. 
+  Think of me as a problem-solving enthusiast who loves to dive into complex puzzles, a teamwork advocate who believes in 
+  the power of good vibes and clear communication, and someone who’s always looking to make a meaningful impact. Whether it’s tweaking, improving, or 
+  tackling the “impossible,” I’m here for it!`,
 ];
 
 export const skills = [
